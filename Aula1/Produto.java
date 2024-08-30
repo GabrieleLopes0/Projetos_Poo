@@ -1,16 +1,17 @@
-package Aula1.primeiroprograma;
+package Aula1;
 
 public class Produto 
 {
-    static String nome = "Copo";
-    static double preco = 5;
-    static int estoque = 0;
     static double valor_estoque;
     public static void main(String[] args) 
     {
-        Produto.valor_estoque(preco, estoque, valor_estoque);
+        String nome = "Copo";
+        double preco = 5;
+        int estoque = 10;
+
+        Produto.valor_estoque(preco, estoque, valor_estoque, nome);
     }
-    public static void valor_estoque(double preco, int estoque, double valor_estoque) 
+    public static void valor_estoque(double preco, int estoque, double valor_estoque, String nome) 
     {
         if (estoque <= 0)
         {

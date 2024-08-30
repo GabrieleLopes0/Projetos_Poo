@@ -1,10 +1,15 @@
-package Aula1.primeiroprograma;
+package Aula1;
+
 public class Circulo {
 
-    static double raio = 5;
     static double pi = 3.14;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
+        double raio = 5;
+        
+        System.out.println("PI sempre será considerado 3,14");
+
         double area = 0;
         double perimetro = 0;
   
