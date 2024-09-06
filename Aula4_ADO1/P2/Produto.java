@@ -1,4 +1,4 @@
-package ADOP1.P2;
+package Aula4_ADO1.P2;
 
 public class Produto 
 {

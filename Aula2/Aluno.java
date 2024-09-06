@@ -21,11 +21,11 @@ public class Aluno
         double n1 = n1Scanner.nextDouble();
 
         Scanner n2Scanner = new Scanner(System.in);
-        System.out.println("Digite a primeira nota: ");
+        System.out.println("Digite a segunda nota: ");
         double n2 = n2Scanner.nextDouble();
 
         Scanner n3Scanner = new Scanner(System.in);
-        System.out.println("Digite a primeira nota: ");
+        System.out.println("Digite a terceira nota: ");
         double n3 = n3Scanner.nextDouble();
 
         nomeScanner.close();

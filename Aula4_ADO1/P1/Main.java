@@ -1,4 +1,4 @@
-package ADOP1.P1;
+package Aula4_ADO1.P1;
 
 import java.util.Scanner;
 

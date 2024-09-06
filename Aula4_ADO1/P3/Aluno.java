@@ -1,4 +1,4 @@
-package ADOP1.P3;
+package Aula4_ADO1.P3;
 
 public class Aluno 
 {

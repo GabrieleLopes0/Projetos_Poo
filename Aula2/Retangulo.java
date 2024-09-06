@@ -11,7 +11,7 @@ public class Retangulo
         double largura = larguraScanner.nextDouble();
 
         Scanner alturaScanner = new Scanner(System.in);
-        System.out.println("Digite a largura do retângulo: ");
+        System.out.println("Digite a altura do retângulo: ");
         double altura = alturaScanner.nextDouble();
 
         larguraScanner.close();
