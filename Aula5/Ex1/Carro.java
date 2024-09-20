@@ -12,5 +12,4 @@ public class Carro
         this.modelo = modelo;
         this.ano = ano;
     }
-
 }
