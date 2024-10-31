@@ -29,19 +29,19 @@ class Debito extends Cartao
     {
         this.valorCompra = valorCompra;
     }
-    public String processarPagamento(double saldo, double valorCompra)
+    public String processarPagamento(double saldo, double valorCompra, int numero)
     {
         if (valorCompra <= 0) 
         {
-            return "O valor da compra é inválido";
+            return "O valor da compra é inválido, no cartão " + numero;
         }
         else if (valorCompra > saldo)
         {
-            return "Não foi possível realizar a compra, saldo insuficiente";
+            return "Não foi possível realizar a compra, saldo insuficiente no cartão " + numero;
         }
         else
         {
-            return "Compra aprovada, seu saldo atual é " + saldo;
+            return "Compra aprovada, seu saldo atual no cartão " + numero + " é " + saldo;
         }
     }
 }

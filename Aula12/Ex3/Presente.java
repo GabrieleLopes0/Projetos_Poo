@@ -29,8 +29,8 @@ class Presente extends Cartao
     {
         this.valorPresente = valorPresente;
     }
-    public String processarPagamento(double saldo, double valorPresente)
+    public String processarPagamento(int numero, double saldo, double valorPresente)
     {
-        return "Seu valor de presente de " + valorPresente + " reais foi utilizado, seu saldo ainda permanecerá " + saldo + " reais";
+        return "Seu valor de presente no cartão" + numero + " é de " + valorPresente + " reais foi utilizado, seu saldo ainda permanecerá " + saldo + " reais";
     }
 }

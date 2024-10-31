@@ -40,7 +40,7 @@ class Credito extends Cartao
     {
         this.saldoCartao = saldoCartao;
     }
-    public String processarPagamento(double saldo, double valorCompra, double saldoCartao)
+    public String processarPagamento(int numero, double saldo, double valorCompra, double saldoCartao)
     {
         if (valorCompra <= 0) 
         {
@@ -48,11 +48,11 @@ class Credito extends Cartao
         }
         else if (valorCompra > saldoCartao)
         {
-            return "Não foi possível realizar a compra, saldo do cartão insuficiente";
+            return "Não foi possível realizar a compra, saldo do cartão insuficiente no cartão " + numero;
         }
         else
         {
-            return "Compra aprovada, seu saldo na conta atual é " + saldo + "reais, seu saldo no cartão é " + (saldoCartao - valorCompra) + "reais";
+            return "Compra aprovada, seu saldo na conta atual é " + saldo + "reais, seu saldo no cartão" + numero + " é " + (saldoCartao - valorCompra) + "reais";
         }
     }
 }
